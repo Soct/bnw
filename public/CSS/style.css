@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", Futura, Helvetica, Arial, sans-serif;
+  position: relative;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  color: #FFFFFF;
+  background-color: #000000; }
+
+.container {
+  display: block;
+  margin-top: 10%; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0; }
+
+.container p {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0; }
+
+[href] {
+  color: #000000;
+  text-decoration: none;
+  font-size: inherit; }
+
+hr {
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 80px; }
+
+.navigation_up {
+  text-align: left; }
+
+/*Menu */
+.menu {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 25px; }
+  .menu span {
+    margin: 0 auto;
+    position: relative;
+    top: 12px; }
+  .menu span:before, .menu span:after {
+    position: absolute;
+    content: ""; }
+  .menu span, .menu span:before, .menu span:after {
+    width: 30px;
+    height: 6px;
+    background-color: #FFFFFF;
+    display: block; }
+  .menu span:before {
+    margin-top: -12px; }
+  .menu span:after {
+    margin-top: 12px; }
+
+/*Fake-Trigger */
+#sized {
+  width: 60px;
+  height: 50px;
+  color: transparent;
+  background-color: transparent;
+  border: transparent; }
+
+/*Modal-Box */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 0.5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 98vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  background-color: #FFFFFF; }
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #FFFFFF;
+  border-bottom: none;
+  height: 35vh; }
+
+.modal-body {
+  padding: 2px 16px;
+  background-color: #FFFFFF; }
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #FFFFFF;
+  color: black;
+  border-top: none;
+  text-align: center;
+  margin: auto; }
+
+.modal-footer hr {
+  margin-top: 20vh; }
+
+.modal-footer > p {
+  color: #000000; }
+
+.modal-footer h3 {
+  text-transform: none;
+  font-size: 4vh; }
+
+.close {
+  color: #000000;
+  float: left;
+  font-size: 5em;
+  font-weight: bold;
+  opacity: 1;
+  padding-bottom: 300px; }
+
+.close:hover,
+.close:focus {
+  color: #B64926;
+  text-decoration: none;
+  cursor: pointer; }
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
+.animated {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/*Navigation */
+.nav ul {
+  clear: both;
+  width: 100%;
+  text-align: center; }
+  .nav ul li {
+    display: inline-block;
+    font-size: 3em; }
+    .nav ul li a:hover {
+      text-decoration: none;
+      color: #B64926; }
+    .nav ul li a {
+      padding: 1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 3vw;
+      letter-spacing: -0.05em; }
+
+/*Form */
+form {
+  border-radius: 5px; }
+  form input {
+    padding: 0;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 30px; }
+  form input:first-child {
+    margin-top: 50px; }
+  form input[type=submit] {
+    margin-top: 20px;
+    font-size: 30px;
+    height: 40px;
+    text-transform: uppercase;
+    color: white;
+    background: black;
+    border: none;
+    font-weight: 600; }
+  form input[type=submit]:hover {
+    color: #B64926;
+    background-color: black; }
+  form textarea {
+    width: 500px;
+    max-width: 500px;
+    font-size: 30px; }
+  form ::placeholder {
+    font-family: "Open Sans", Futura, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    margin: 20px; }
+
+/*# sourceMappingURL=style.css.map */

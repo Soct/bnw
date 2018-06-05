@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Task\\Controllers\\": "app/controllers",
+            "Task\\Models\\": "app/models",
+            "Task\\Core\\": "core",
+            "Task\\Database\\": "core/database"
+        }
+    }
+}

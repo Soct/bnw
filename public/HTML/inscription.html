@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../Ressources/CSS/style.css"/>
+</head>
+<body>
+
+<div class="navigation_up">
+
+    <button id="sized" class="menu">
+        <span></span>
+    </button>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content animated zoomIn">
+            <div class="modal-header">
+                <span class="close">×</span>
+            </div>
+
+            <div class="modal-body nav">
+                <ul>
+                    <li>
+                        <a href="/">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="/users/connect">Connexion</a>
+                    </li>
+                    <li>
+                        <a href="/users/new">Inscription</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <p>
+                    <strong>Black'n White</strong>
+                    <br>14 rue de Belfort &#149; Chalon sur Saône, 71100 &#149; 03 85 12 34 56
+                    <br>
+                    <b>mail@bnw.fr</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1>Inscription
+    </h1>
+    <form method='post' action="../validateNew.php">
+        <input type="text" name="userName" placeholder="Entrez votre nom"><br>
+        <input type="password" name="pass" placeholder="Entrez votre pass"><br>
+        <input type="mail" name="mail" placeholder="Entrez votre mail"><br>
+        <input type="text" name="address" placeholder="Entrez votre adresse"><br>
+        <input type="text" name="ville" placeholder="Entrez votre ville"><br>
+        <input type="text" name="cp" placeholder="Entrez votre cp"><br>
+
+        <input type="submit" value="Envoyer">
+
+    </form>
+</div>
+
+<script src="../Ressources/JS/index.js"></script>
+<script>
+    function menu() {
+        if (localStorage.getItem("hasCodeRunBefore") === null) {
+            document.getElementById('sized').click();
+            localStorage.setItem("hasCodeRunBefore", true);
+        }
+    }
+</script>
+
+</body>
+</html>
