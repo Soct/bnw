@@ -1,8 +1,8 @@
 <?php
 
-use Task\Core\App;
-use Task\Database\QueryBuilder;
-use Task\Database\Connection;
+use Bnw\Core\App;
+use Bnw\Database\QueryBuilder;
+use Bnw\Database\Connection;
 
 App::bind('config', require __DIR__.'/../config.php');
 

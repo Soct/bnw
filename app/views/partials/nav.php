@@ -16,10 +16,10 @@
                         <a href="/">Accueil</a>
                     </li>
                     <li>
-                        <a href="/users/connect">Connexion</a>
+                        <a href="/connect-user">Connexion</a>
                     </li>
                     <li>
-                        <a href="/users/new">Inscription</a>
+                        <a href="/new-user">Inscription</a>
                     </li>
                     <li>
                         <a href="/contact">Contact</a>

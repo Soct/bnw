@@ -1,6 +1,6 @@
 <?php
 
-namespace Task\Core;
+namespace Bnw\Core;
 
 class Router
 {
@@ -41,7 +41,7 @@ class Router
 
     private function callAction($controller, $action)
     {
-        $controller = "Task\\Controllers\\{$controller}";
+        $controller = "Bnw\\Controllers\\{$controller}";
         $controller = new $controller;
 
         if (!method_exists($controller, $action)) {

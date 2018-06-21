@@ -1,6 +1,6 @@
 <?php
 
-namespace Task\Database;
+namespace Bnw\Database;
 
 use \PDO;
 use \PDOException;
@@ -20,7 +20,7 @@ class QueryBuilder
 
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS, "Task\\Models\\{$intoClass}");
+        return $statement->fetchAll(PDO::FETCH_CLASS, "Bnw\\Models\\{$intoClass}");
     }
 
     public function insert($table, $parameters)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Task\Database;
+namespace Bnw\Database;
 
 use \PDO;
 use \PDOException;

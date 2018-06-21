@@ -1,6 +1,6 @@
 <?php
 
-namespace Task\Core;
+namespace Bnw\Core;
 
 class Request
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Task\Controllers;
+namespace Bnw\Controllers;
 
 class PagesController
 {
@@ -11,7 +11,7 @@ class PagesController
     
     public function contact()
     {
-        $company = "Perdriolle";
+        $company = "Black'n White";
 
         return view('contact', compact('company'));
     }

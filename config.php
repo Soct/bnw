@@ -2,8 +2,8 @@
 
 return [
     'database' => [
-        'name' => 'todo',
-        'username' => 'perdriolle',
+        'name' => 'bnw',
+        'username' => 'bnw',
         'password' => 'Gd1Aq8Zl54VG',
         'dsn' => 'mysql:host=127.0.0.1',
         'options' => [
