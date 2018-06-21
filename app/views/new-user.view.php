@@ -11,15 +11,15 @@
     <h1>Inscription</h1>
 
     <form action="/new-user" method="POST">
-        <label>Nom : </label><input type="text" name="lastname" required /><br />
-        <label>Prénom : </label><input type="text" name="firstname" required /><br />
-        <label>Mail : </label><input type="mail" name="mail" required /><br />
-        <label>Mot de passe : </label><input type="password" name="pass" required /><br />
-        <label>Confirmer mot de passe: </label><input type="password" name="passVerif" required /><br />
-        <label>Téléphone : </label><input type="text" name="phone" required /><br />
-        <label>Adresse : </label><input type="text" name="adress" required /><br />
-        <label>Ville : </label><input type="text" name="town" required /><br />
-        <label>CP : </label><input type="text" name="cp" required /><br />
+        <input type="text" name="lastname" required placeholder="Nom"/><br />
+        <input type="text" name="firstname" required placeholder="Prénom"/><br />
+        <input type="mail" name="mail" required placeholder="Mail"/><br />
+        <input type="password" name="pass" required placeholder="Mot de passe "/><br />
+        <input type="password" name="passVerif" required placeholder="Confirmer mot de passe "/><br />
+        <input type="text" name="phone" required placeholder="Téléphone"/><br />
+        <input type="text" name="adress" required placeholder="Adresse"/><br />
+        <input type="text" name="town" required placeholder="Ville"/><br />
+        <input type="text" name="cp" required placeholder="CP"/><br />
         <input type="submit" />
     </form>
 </div>

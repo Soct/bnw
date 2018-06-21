@@ -35,7 +35,12 @@ class UsersController
 
     public function connect()
     {
+        return view('connect');
+    }
 
+    public function validate()
+    {
+        App::get('database')->selectAll();
     }
 
 

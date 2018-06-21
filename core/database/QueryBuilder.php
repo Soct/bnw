@@ -23,6 +23,7 @@ class QueryBuilder
         return $statement->fetchAll(PDO::FETCH_CLASS, "Bnw\\Models\\{$intoClass}");
     }
 
+
     public function insert($table, $parameters)
     {
         $sql = sprintf(
