@@ -10,6 +10,7 @@
 namespace Bnw\Controllers;
 
 use Bnw\Core\App;
+use Bnw\Models\User;
 
 class UsersController
 {
@@ -33,14 +34,31 @@ class UsersController
         return redirect('connect/user');
     }
 
-    public function connect()
+    public function connect($tab = null)
     {
-        return view('connect');
+        if($tab != null){
+            return view('connect', compact('tab'));
+        } else {
+            return view('connect');
+        }
     }
 
     public function validate()
     {
-        App::get('database')->selectAll();
+        $validate = App::get('database')->selectOneUser('user', 'User', $_POST['mail'], sha1($_POST['pass']));
+        // on recupérer un array vide si rien et avec un objet dedans si l'utilsateur existe
+        if(!empty($validate)){
+            $_SESSION['utilisateur'] = $validate[0];
+            return view('index');
+        } else {
+            $this->connect($_POST);
+        }
+    }
+
+    public function deconnect(){
+        session_unset();
+        session_destroy();
+        return view('index');
     }
 
 

@@ -10,8 +10,9 @@ include_once 'partials/head.php'; ?>
 <div class="container">
     <h1>Connexion</h1>
 
-    <form action="/validate" method="POST">
-        <input type="mail" name="mail" required placeholder="Mail "/><br />
+    <form action="/connect-user" method="POST">
+        <?php if(!empty($tab)) : echo "<p style='color :red'>Mauvais mot de passe ou adresse mail </p><br>"; endif;?>
+        <input type="mail" name="mail" required placeholder="Mail " value="<?php echo $tab['mail'] = empty($tab['mail'] ) ? '':  $tab['mail'] ?>"/><br />
         <input type="password" name="pass" required placeholder="Mot de passe"/><br />
         <input type="submit" />
     </form>

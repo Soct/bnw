@@ -15,12 +15,21 @@
                     <li>
                         <a href="/">Accueil</a>
                     </li>
-                    <li>
-                        <a href="/connect-user">Connexion</a>
-                    </li>
-                    <li>
-                        <a href="/new-user">Inscription</a>
-                    </li>
+                    <?php if(empty($_SESSION['utilisateur'])) : ?>
+                        <li>
+                            <a href="/connect-user">Connexion</a>
+                        </li>
+                        <li>
+                            <a href="/new-user">Inscription</a>
+                        </li>
+                    <?php else : ?>
+                        <li>
+                            <a href="/connect-user">Mes animaux</a>
+                        </li>
+                        <li>
+                            <a href="/new-user">Mes RDv</a>
+                        </li>
+                    <?php endif; ?>
                     <li>
                         <a href="/contact">Contact</a>
                     </li>

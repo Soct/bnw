@@ -10,3 +10,5 @@ $router->post('new-user', 'UsersController@store');
 
 $router->get('connect-user', 'UsersController@connect');
 $router->post('connect-user', 'UsersController@validate');
+
+$router->get('deconnect-user', 'UsersController@deconnect');
