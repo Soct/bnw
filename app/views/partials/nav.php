@@ -3,7 +3,7 @@
     <button id="sized" class="menu">
         <span></span>
     </button>
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" style="z-index: 100;">
         <!-- Modal content -->
         <div class="modal-content animated zoomIn">
             <div class="modal-header">
@@ -24,10 +24,10 @@
                         </li>
                     <?php else : ?>
                         <li>
-                            <a href="/connect-user">Mes animaux</a>
+                            <a href="/animal">Mes animaux</a>
                         </li>
                         <li>
-                            <a href="/new-user">Mes RDv</a>
+                            <a href="/rdv">Mes RDv</a>
                         </li>
                     <?php endif; ?>
                     <li>

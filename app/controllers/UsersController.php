@@ -32,13 +32,13 @@ class UsersController
                 'cp' => $_POST['cp']
             ]);
 
-
             return redirect('connect/user');
+
         } else {
+
             return view('new-user');
+
         }
-
-
     }
 
     public function connect($tab = null)
@@ -55,7 +55,9 @@ class UsersController
         $validate = App::get('database')->selectOneUser('user', 'User', $_POST['mail'], sha1($_POST['pass']));
         // on recupérer un array vide si rien et avec un objet dedans si l'utilsateur existe
         if(!empty($validate)){
-            $_SESSION['utilisateur'] = $validate[0];
+            $tempUser = new User();
+            $tempUser = $validate[0];
+            $_SESSION['utilisateur'] = $tempUser;
             return view('index');
         } else {
             $this->connect($_POST);

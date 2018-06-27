@@ -26,9 +26,7 @@ class QueryBuilder
     public function selectOneUser($table, $intoClass, $mail, $pass)
     {
         try{
-            //die($mail.$table);
             $statement = $this->pdo->prepare("select * from {$table} where mail = '{$mail}' and pass = '{$pass}'");
-
             $statement->execute();
 
             return $statement->fetchAll(PDO::FETCH_CLASS, "Bnw\\Models\\{$intoClass}");
@@ -36,7 +34,6 @@ class QueryBuilder
             return $e->getMessage();
         }
     }
-
 
     public function insert($table, $parameters)
     {
