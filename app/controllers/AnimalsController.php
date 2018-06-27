@@ -9,15 +9,39 @@
 namespace Bnw\Controllers;
 
 
+use Bnw\Core\App;
+use Bnw\Models\Animal;
+
 class AnimalsController
 {
 
-    public function create() {
+    public function show(){
 
+        $animals = App::get('database')->selectAll('animal', 'Animal');
+
+        return view('animal',  compact('animals'));
     }
+    public function create()
+    {
+        return view('new-animal');
+    }
+    public function store()
+    {
+        if(1){
+            App::get('database')->insert('animal', [
+                'iduser' => $_SESSION['utilisateur']->getIduser(),
+                'nom' => $_POST['nom'],
+                'poids' => $_POST['poid'],
+                'race' => $_POST['race']
+            ]);
 
-    public function store(){
+            return redirect('');
 
+        } else {
+
+            return view('new-animal');
+
+        }
     }
 
 }

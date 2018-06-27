@@ -29,6 +29,9 @@
                         <li>
                             <a href="/rdv">Mes RDv</a>
                         </li>
+                        <li>
+                            <a href="/deconnect-user">Deconnexion</a>
+                        </li>
                     <?php endif; ?>
                     <li>
                         <a href="/contact">Contact</a>

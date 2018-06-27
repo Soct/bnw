@@ -19,3 +19,7 @@ $router->get('deconnect-user', 'UsersController@deconnect');
 // RDV route
 $router->get('rdv', 'RdvsController@show');
 
+// Animal route
+$router->get('animal', 'AnimalsController@show');
+$router->get('new-animal', 'AnimalsController@create');
+$router->post('new-animal', 'AnimalsController@store');

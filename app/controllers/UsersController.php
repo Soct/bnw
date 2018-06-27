@@ -58,7 +58,7 @@ class UsersController
             $tempUser = new User();
             $tempUser = $validate[0];
             $_SESSION['utilisateur'] = $tempUser;
-            return view('index');
+            return redirect('');
         } else {
             $this->connect($_POST);
         }
@@ -67,7 +67,7 @@ class UsersController
     public function deconnect(){
         session_unset();
         session_destroy();
-        return view('index');
+        return redirect('');
     }
 
 
