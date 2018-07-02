@@ -17,8 +17,8 @@
             editable: true,
             aspectRatio: 1.5,
             scrollTime: '09:00',
-            defaultView: 'agendaWeek',
             locale: 'fr',
+            now: '2017-12-01T00:00:00',
             isRTL: true,
             groupByResource: true,
             dayClick:  function(date, jsEvent, view) {
