@@ -1,51 +1,31 @@
-<div class="navigation_up">
+<nav id="navigation">
+    <a href="/" class="logo">Black'n White<span>+<span></a>
+    <ul class="links">
+        <li><a href="/">Accueil</a></li>
+        <li class="dropdown"><a href="#" class="trigger-drop">Espace utilisateur<i class="arrow"></i></a>
+            <ul class="drop">
+            <?php if(empty($_SESSION['utilisateur'])) : ?>
 
-    <button id="sized" class="menu">
-        <span></span>
-    </button>
-    <div id="myModal" class="modal" style="z-index: 100;">
-        <!-- Modal content -->
-        <div class="modal-content animated zoomIn">
-            <div class="modal-header">
-                <span class="close">×</span>
-            </div>
+                <li><a href="/new-user">Inscription</a></li>
+                <li><a href="/connect-user">Connexion</a></li>
 
-            <div class="modal-body nav">
-                <ul>
-                    <li>
-                        <a href="/">Accueil</a>
-                    </li>
-                    <?php if(empty($_SESSION['utilisateur'])) : ?>
-                        <li>
-                            <a href="/connect-user">Connexion</a>
-                        </li>
-                        <li>
-                            <a href="/new-user">Inscription</a>
-                        </li>
-                    <?php else : ?>
-                        <li>
-                            <a href="/animal">Mes animaux</a>
-                        </li>
-                        <li>
-                            <a href="/rdv">Mes RDv</a>
-                        </li>
-                        <li>
-                            <a href="/deconnect-user">Deconnexion</a>
-                        </li>
-                    <?php endif; ?>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <p>
-                    <strong>Black'n White</strong>
-                    <br>14 rue de Belfort &#149; Chalon sur Saône, 71100 &#149; 03 85 12 34 56
-                    <br>
-                    <b>mail@bnw.fr</b>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+
+            <?php else : ?>
+                <li><a href="/rdv">Mes RDV</a></li>
+                <li><a href="/animal">Mes Animaux</a></li>
+                <li><a href="/tarif">Tarifs</a></li>
+                <?php if(($_SESSION['utilisateur'])->getType() == 1) : ?>
+                    <li><a href="/admin">Admin</a></li>
+                <?php endif;?>
+                <li><a href="/deconnect-user">Deconnexion</a></li>
+            <?php endif; ?>
+            </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="trigger-drop">Contactez-nous<i class="arrow"></i></a>
+            <ul class="drop">
+                <li><a href="/contact">Email</a></li>
+                <li><a href="tel:0385123456">Téléphone</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>

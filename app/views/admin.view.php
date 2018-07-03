@@ -1,21 +1,17 @@
 <?php include_once 'partials/head.php'; ?>
-<?php if(empty($_SESSION['utilisateur'])) {
-    header('Location: connect-user');
-} ?>
-
 <?php
+if(empty($_SESSION['utilisateur'])) {
+    header('Location: connect-user');
+}
+if(($_SESSION['utilisateur'])->getType() == 0) {
+    header('Location: index');
+}
+
 
 ?>
 <br><br><br><br><br><br>
+<h1>Admin Panel</h1>
 
-<h1>Mes RDV</h1>
-<form method="post">
-    <input type="text" value="<?php if(!empty($animals)){echo $animals[0]->getNom();}?>">
-    <input type="text" name="idanimal" value="<?php if(!empty($animals)){echo $animals[0]->getIdanimal();}?>" hidden>
-    <input type="date" name="date" id="datePick">
-    <input type="time" name="heure" value="09:00" hidden>
-    <input type="submit" value="valider mon RDV">
-</form>
 <div id='calendar' style="color:white;; margin : 128px;"></div>
 
 <script>

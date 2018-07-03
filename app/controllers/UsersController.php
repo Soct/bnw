@@ -32,7 +32,7 @@ class UsersController
                 'cp' => $_POST['cp']
             ]);
 
-            return redirect('connect/user');
+            return redirect('connect-user');
 
         } else {
 
@@ -70,5 +70,9 @@ class UsersController
         return redirect('');
     }
 
+    public function admin() {
+        $rdvs = App::get('database')->selectAll('rdv', 'Rdv');
+        return view('admin', compact('rdvs'));
+    }
 
 }

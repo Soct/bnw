@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="CSS/gallerystyle.css"/>
 
 <script type="text/javascript" src="JS/motiongallery.js"></script>
+<br><br><br><br><br><br>
 <h1>BIENVENUE SUR LE SITE DE BLACK'N WHITE</h1>
 <br><br><br><br><br><br><br>
 
@@ -16,12 +17,22 @@
 <ul>
     <li><a href="#" onClick="enlargeimage('IMG/cat.jpg'); return false"><img src="IMG/cat.jpg"></a></li>
     <li><a href="#" onClick="enlargeimage('IMG/dog.jpg'); return false"><img src="IMG/dog.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog1.jpg'); return false"><img src="IMG/dog1.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog2.jpg'); return false"><img src="IMG/dog2.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/cat.jpg'); return false"><img src="IMG/cat.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog.jpg'); return false"><img src="IMG/dog.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog1.jpg'); return false"><img src="IMG/dog1.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog2.jpg'); return false"><img src="IMG/dog2.jpg"></a></li>
     <li><a href="#" onClick="enlargeimage('IMG/cat.jpg'); return false"><img src="IMG/cat.jpg"></a></li>
     <li><a href="#" onClick="enlargeimage('IMG/dog.jpg'); return false"><img src="IMG/dog.jpg"></a></li>
     <li><a href="#" onClick="enlargeimage('IMG/cat.jpg'); return false"><img src="IMG/cat.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog2.jpg'); return false"><img src="IMG/dog2.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog1.jpg'); return false"><img src="IMG/dog1.jpg"></a></li>
     <li><a href="#" onClick="enlargeimage('IMG/dog.jpg'); return false"><img src="IMG/dog.jpg"></a></li>
-    <li><a href="#" onClick="enlargeimage('IMG/cat.jpg'); return false"><img src="IMG/cat.jpg"></a></li>
     <li><a href="#" onClick="enlargeimage('IMG/dog.jpg'); return false"><img src="IMG/dog.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog2.jpg'); return false"><img src="IMG/dog2.jpg"></a></li>
+    <li><a href="#" onClick="enlargeimage('IMG/dog1.jpg'); return false"><img src="IMG/dog1.jpg"></a></li>
+
 
 
 </ul>

@@ -2,6 +2,9 @@
 
 namespace Bnw\Controllers;
 
+
+use Bnw\Core\App;
+
 class PagesController
 {
     public function home()
@@ -20,4 +23,11 @@ class PagesController
     {
         return view('about');
     }
+
+    public function tarif() {
+        $tarifs = App::get('database')->selectAllTarif();
+        return view('tarif', compact('tarifs'));
+    }
+
+
 }

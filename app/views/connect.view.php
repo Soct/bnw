@@ -16,5 +16,9 @@ include_once 'partials/head.php'; ?>
         <input type="password" name="pass" required placeholder="Mot de passe"/><br />
         <input type="submit" />
     </form>
+
+    <br><br><img src="IMG/LogoBnW.jpg" style="max-width: 200px"/><br><br>
 </div>
+
+
 <?php include_once 'partials/footer.php'; ?>

@@ -11,6 +11,7 @@
 
 
     <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/menu.css"/>
     <link rel="stylesheet" href="FULLCALENDAR/fullcalendar.css"/>
     <script src='JS/jquery.js'></script>
     <script src='JS/moment.js'></script>
